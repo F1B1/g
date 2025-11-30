@@ -374,7 +374,7 @@ main {
   left: -24px;
   transform: translateY(-50%);
   border-radius: 50%;
-  box-shadow: 0px 0px 8px 0px rgb(161, 216, 238);
+  box-shadow: 0px 0px 18px 3px rgb(161, 216, 238);
 }
 .block-cnt {
   margin-top: 48px;
@@ -656,6 +656,9 @@ header {
   max-width: max-content;
 }
 
+.inspire-mobile{
+  display: none;
+}
 .inspire{
   position: relative;
   padding-top: 174px;
@@ -769,6 +772,7 @@ header {
 .work__column-3 .work__image{
   max-width: 235px;
   width: 100%;
+  display: flex;
 }
 .work__column-3 .work__wrapper{
   display: flex;
@@ -867,6 +871,8 @@ header {
   visibility: hidden;
 }
 .work__arrow{
+  display: flex;
+  justify-content:center;align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -874,8 +880,16 @@ header {
   z-index: 1;
   transition: all 0.3s ease 0s;
 }
+.work__round{
+  position: absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
 .work__animate:hover .work__arrow{
   filter: brightness(0);
+  transform: translate(-50%, -50%) scale(1.4);
 }
 
 @keyframes rotate {
@@ -897,6 +911,7 @@ header {
 }
 .advantages__top .section-titles{
   align-items: flex-start;
+  justify-content: flex-start;
 }
 .advantages__top .section-titles h2{
   text-align: left;
@@ -959,6 +974,7 @@ header {
 .advantages__column{
   border: 1px solid rgba(194, 204, 246, .12);
   border-radius: 16px;
+  overflow: hidden;
 }
 .advantages__blur{
   position: absolute;
@@ -1174,7 +1190,6 @@ header {
 .reviews-section {
   position: relative;
   z-index: 4;
-  overflow: hidden;
 }
 .reviews-bg {
   position: absolute;
@@ -1797,6 +1812,12 @@ header {
   }
   .advantages .section-tag{
     margin: 0px auto;
+    margin-bottom: 6px;
+  }
+  .section-tag::before{
+    width: 4px;
+    height: 4px;
+    left: -14px;
   }
   .advantages__pagination{
     display: flex;
@@ -1895,6 +1916,12 @@ header {
     max-width: max-content;
   }
   .inspire{
+    display: none;
+  }
+  .inspire-mobile{
+    display: block;
+  }
+  .inspire{
     padding-top: 90px;
   }
   .inspire h2{
@@ -1912,8 +1939,8 @@ header {
     background: unset;
     border: 0;
     border-radius: 0;
-    max-width: 350px;
     margin: 0px auto;
+    backdrop-filter: none;
   }
   .possibility__button{
     width: 80px;
@@ -1921,23 +1948,27 @@ header {
     right: 0; 
   }
   .possibility__button img{
-    width: 24px;
+    width: 26px;
   }
   .possibility__image{
-    width: 332px;
-    height: 332px;
     border-radius: 50%;
     overflow: hidden;
+    max-width: unset;
+    width: 100%;
   }
   .possibility__subtitle{
     font-size: 18px;
     text-align: center;
   }
+
+  .possibility .section-titles{
+    max-width: 332px;
+  }
   .possibility__content{
-    margin-top: -24px;
+    margin-top: -32px;
     padding: 24px;
     background: linear-gradient(105.97deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(30px);
     border: 1px solid rgba(194, 204, 246, .12);
     border-radius: 12px;
   }
@@ -2034,6 +2065,9 @@ header {
     width: 32px;
     height: 32px;
     flex: 0 0 32px;
+  }
+  .faq-section{
+    margin-top: 60px;
   }
   .possibility{
     margin-top: 60px;
@@ -2190,12 +2224,16 @@ header {
     line-height: 120%;
   }
 
+  .work{
+    margin-bottom: 20px;
+  }
+
   .process-mobile-media {
     display: flex;
     margin-top: 30px;
   }
   .hero-section {
-    padding: 117px 0 0;
+    padding: 162px 0 0;
   }
   .n-hero-media {
     display: none;

@@ -8,7 +8,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Post generation</title>
+    <title>Bring a photo to life</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -196,7 +196,7 @@
             <div class="advantages__top">
               <div class="section-titles fade-top G-column-center">
                   <h2>
-                    Nexa AI — ваш лучший выбор <span>для оживления фото</span>
+                    Nexa AI — ваш лучший <br> выбор <span style="color: #DCE8FF;">для оживления фото</span>
                   </h2>
                   <p>Сочетание <span style="font-weight: 600;">мощных технологий</span> <br> с простотой использования</p>
               </div>
@@ -294,7 +294,7 @@
             <div class="section-titles fade-top G-column-center">
                 <span class="section-tag">Возможности</span>
                 <h2>
-                  Функционал, который <span>вдохнёт жизнь в ваши фото</span>
+                  Функционал, который <span style="color: #DCE8FF;">вдохнёт жизнь в ваши фото</span>
                 </h2>
                 <p>От базового оживления до профессиональных эффектов — <span style="font-weight: 600;">всё для вашего творчества</span></p>
             </div>
@@ -308,7 +308,14 @@
                   <img src="assets/images/icon/arrow.png" alt="img" width="" heigth="" loading="lazy">
                 </a>
                 <div class="possibility__image">
-                  <img src="assets/images/possibility1.webp" alt="img" width="" heigth="" loading="lazy">
+                 <picture>
+                     <source
+                      srcset="assets/images/possibility1Mobile.webp"
+                      media="(max-width: 768px)"
+                      type="image/webp"
+                    />
+                    <img src="assets/images/possibility1.webp" alt="img" width="" heigth="" loading="lazy">
+                 </picture>
                 </div>
               </div>
               <div class="possibility__column">
@@ -320,7 +327,14 @@
                   <img src="assets/images/icon/arrow.png" alt="img" width="" heigth="" loading="lazy">
                 </a>
                 <div class="possibility__image">
-                  <img src="assets/images/possibility2.webp" alt="img" width="" heigth="" loading="lazy">
+                  <picture>
+                     <source
+                      srcset="assets/images/possibility2Mobile.webp"
+                      media="(max-width: 768px)"
+                      type="image/webp"
+                    />
+                    <img src="assets/images/possibility2.webp" alt="img" width="" heigth="" loading="lazy">
+                 </picture>
                 </div>
               </div>
               <div class="possibility__column">
@@ -332,7 +346,14 @@
                   <img src="assets/images/icon/arrow.png" alt="img" width="" heigth="" loading="lazy">
                 </a>
                 <div class="possibility__image">
-                  <img src="assets/images/possibility3.webp" alt="img" width="" heigth="" loading="lazy">
+                  <picture>
+                     <source
+                      srcset="assets/images/possibility3Mobile.webp"
+                      media="(max-width: 768px)"
+                      type="image/webp"
+                    />
+                    <img src="assets/images/possibility3.webp" alt="img" width="" heigth="" loading="lazy">
+                 </picture>
                 </div>
               </div>
               <div class="possibility__column">
@@ -344,10 +365,23 @@
                   <img src="assets/images/icon/arrow.png" alt="img" width="" heigth="" loading="lazy">
                 </a>
                 <div class="possibility__image">
-                  <img src="assets/images/possibility4.webp" alt="img" width="" heigth="" loading="lazy">
+                  <picture>
+                     <source
+                      srcset="assets/images/possibility4Mobile.webp"
+                      media="(max-width: 768px)"
+                      type="image/webp"
+                    />
+                    <img src="assets/images/possibility4.webp" alt="img" width="" heigth="" loading="lazy">
+                 </picture>
                 </div>
               </div>
             </div>
+            <a class="black-btn hero-btn">
+              <span class="black-btn-bg G-center">
+                <i class="icon icon-stars"></i>
+              </span>
+              <span class="black-btn-text">Оживить фото сейчас</span>
+            </a>
           </div>
         </section>
 
@@ -420,6 +454,9 @@
                     </div>
                   </div>
                   <a href="#" class="work__animate">
+                    <div class="work__round">
+                      <img src="assets/images/roundBorderImg.webp" alt="img" width="" heigth="" loading="lazy">
+                    </div>
                     <div class="work__arrow">
                       <img src="assets/images/icon/arrow.png" alt="img" width="" heigth="" loading="lazy">
                     </div>
@@ -864,6 +901,47 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="inspire inspire-mobile section">
+          <div class="inspire__container container">
+            <div class="inspire__body">
+              <div class="inspire__grid">
+                <img src="assets/images/inspireGrid.webp" alt="img" width="" heigth="" loading="lazy">
+              </div>
+              <div class="inspire__content">
+                <h2><span>Вдохните жизнь</span> <br> в ваши фотографии!</h2>
+                <p>Просто загрузите фото — и наблюдайте, <span style="font-weight: 600;">как оживают ваши любимые моменты</span></p>
+                <a class="black-btn hero-btn">
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Оживить фото сейчас</span>
+                </a>
+              </div>
+               <div class="inspire__blur">
+                  <picture>
+                      <source
+                      srcset="assets/images/inspireBlurMobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img src="assets/images/inspireBlur.webp" alt="img" width="" heigth="" loading="lazy">
+                  </picture>
+              </div>
+            </div>
+          </div>
+         
+          <div class="inspire__image">
+            <picture>
+               <source
+                srcset="assets/images/inspireMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img src="assets/images/inspire.webp" alt="img" width="" heigth="" loading="lazy">
+            </picture>
           </div>
         </section>
 
